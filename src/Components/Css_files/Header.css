@@ -1,0 +1,19 @@
+.header_container{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.header_container p {
+    color: aqua;
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: Abril Fatface;
+}
+
+ h1, h2 {
+    color: white;
+}
