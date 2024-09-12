@@ -9,15 +9,16 @@ const Nav = () => {
           <Link to="/" className="btn btn-ghost normal-case text-xl">
           Canyon City Grill
           </Link>
-
-        </div>
-         <div className=""
-
-         <div
-
-
-
-      </nav>
+          <div className="flex-none">
+        <ul className="menu menu-horizontal p-0">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/menu">Menu</Link></li>
+          <li><Link to="/reviews">Reviews</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </div>
+    </nav>
+      
 
 
   )

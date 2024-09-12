@@ -1,35 +1,33 @@
 import React from "react";
-import { Carousel } from "react-daisyui";
-import BurgerImg from "../assets/images/Burgers.jpg";
+import { Carousel, Button } from "react-daisyui";
+import bbqImg from "../assets/images/BBQ.jpg";
+import burgerImg from "../assets/images/Bfries.jpg";
+import chickenImg from "../assets/images/ChickenWings.jpg";
+import cheeseSteakImg from "../assets/images/Phillycheese.jpg";
+import "../Components/Css_files/Home.css";
+
 const Home = () => {
   return (
     <div>
-      <h1>The Canyon City Grill</h1>
-      <h2>Hours of Operation</h2>
-      <div>
-        <section>
-          <Carousel className="rounded-box" display="sequential">
-            <Carousel.Item
-              src={BurgerImg}
-              alt="City"
-              width="50px"
-              height="50px"
-            />
-            <Carousel.Item
-              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-              alt="City"
-            />
-            <Carousel.Item
-              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-              alt="City"
-            />
-            <Carousel.Item
-              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-              alt="City"
-            />
-          </Carousel>
-          <button>Menu</button>
-        </section>
+      <div className="carousel_container">
+        <Carousel
+          style={{
+            width: "100%",
+            height: "30em",
+            marginBottom: "2em",
+            marginTop: "2em",
+          }}
+          display="sequential"
+          className="rounded-box"
+        >
+          <Carousel.Item src={bbqImg} alt="City" />
+          <Carousel.Item src={burgerImg} alt="City" />
+          <Carousel.Item src={chickenImg} alt="City" />
+          <Carousel.Item src={cheeseSteakImg} alt="City" />
+        </Carousel>
+      </div>
+      <div className="button_container">
+        <Button color="accent">Order Online</Button>
       </div>
     </div>
   );
