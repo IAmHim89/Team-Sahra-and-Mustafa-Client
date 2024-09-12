@@ -2,26 +2,37 @@ import "./App.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
-<<<<<<< HEAD
 import Nav from "./Components/Nav";
-=======
 import Beverage from "./Components/Beverage";
->>>>>>> 44e46c651a2ff5be8ee66340ed441363f4fb3a21
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <nav></nav>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Home />
-        <About />
-        <Beverage />
-      </main>
-      <footer></footer>
-    </div>
+    <Router>
+      <div>
+        {/* Navbar */}
+        <nav>
+          <Nav />
+        </nav>
+
+        {/* Header */}
+        <header>
+          <Header />
+        </header>
+
+        {/* Routes */}
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/beverage" element={<Beverage />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <footer></footer>
+      </div>
+    </Router>
   );
 }
 

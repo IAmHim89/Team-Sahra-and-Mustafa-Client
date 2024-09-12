@@ -5,6 +5,7 @@ import burgerImg from "../assets/images/Bfries.jpg";
 import chickenImg from "../assets/images/ChickenWings.jpg";
 import cheeseSteakImg from "../assets/images/Phillycheese.jpg";
 import "../Components/Css_files/Home.css";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <div className="button_container">
         <Button color="accent">Order Online</Button>
       </div>
+      <About />
     </div>
   );
 };
