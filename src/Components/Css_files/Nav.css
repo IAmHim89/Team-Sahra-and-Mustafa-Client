@@ -1,0 +1,45 @@
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:stretch;
+    align-items:first center;
+    gap: 2em;
+    position: fixed;
+    right: -60em;
+    margin-bottom: .5em;
+   
+   
+    
+    
+}
+
+
+.canyon_city{
+    position: fixed;
+    left: 2em;
+}
+
+ li{
+    font-size: 1.5em;
+}
+
+.button_style{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: Abril Fatface;
+    color: black;
+    border-bottom: 2px solid black;
+    border-radius: 2em;
+    box-shadow: 5px 5px 8px black;
+    padding: .5em 3em;
+    background-color: aqua;
+}
+
+.button_style:hover{
+    background-color: white;
+    color: black;
+    font-family: Abril Fatface;
+    box-shadow: 5px 5px 8px black;
+    
+}
