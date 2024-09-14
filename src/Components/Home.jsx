@@ -16,7 +16,7 @@ const Home = () => {
             width: "100%",
             height: "30em",
             marginBottom: "2em",
-            marginTop: "2em",
+            marginTop: "3em",
           }}
           display="sequential"
           className="rounded-box"
