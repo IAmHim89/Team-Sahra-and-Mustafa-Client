@@ -1,0 +1,45 @@
+.beverage_flex{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.beverage_flex h1{
+    font-size: 5em;
+    border-radius: 2em;
+    border-bottom: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 0em 1em;
+    font-family: Abril Fatface;
+    color: aqua;
+    font-weight: bolder;
+    margin-bottom: .5em;
+    margin-top: 1em;
+
+
+}
+
+.beverage_flex p{
+
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+
+}
+
+ .img_flex{
+
+    width: 20vw;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 5em;
+
+}
