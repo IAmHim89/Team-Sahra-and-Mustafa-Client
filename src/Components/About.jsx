@@ -29,6 +29,7 @@ const About = () => {
           <img src={barImg} alt="Image" />
         </div>
       </div>
+      <div className="bottom_border"></div>
     </div>
   );
 };
