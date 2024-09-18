@@ -10,18 +10,7 @@ const About = () => {
         <div className="aboutUs">
           <h1>About Us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            id quam fugiat cum? Amet asperiores possimus error praesentium
-            laborum rem quibusdam quod suscipit tenetur expedita dicta
-            excepturi, cum cumque mollitia obcaecati quasi impedit! Dolorem qui
-            sequi quisquam ad laudantium, perferendis culpa? Repudiandae
-            reprehenderit molestias numquam. Assumenda quidem laudantium
-            exercitationem animi voluptates, deserunt ipsum nisi cupiditate
-            voluptatem dolores. Officia minus cum libero perspiciatis est porro
-            quasi dicta suscipit sint, in fugiat enim, qui debitis numquam
-            assumenda earum magni iusto unde. Quos sunt ad magni, ducimus
-            distinctio ab, quo accusantium porro qui soluta nulla saepe
-            laudantium velit ratione molestias rerum eum totam.
+            Welcome to our family restaurant in beautiful Canyon City Texas!
           </p>
         </div>
         <div className="images">
