@@ -3,9 +3,9 @@ nav{
     flex-flow: row wrap;
     justify-content:stretch;
     align-items:first center;
-    gap: 2em;
+    gap: 4em;
     position: fixed;
-    right: -60em;
+    right: -50em;
     margin-bottom: .5em;
     
    
