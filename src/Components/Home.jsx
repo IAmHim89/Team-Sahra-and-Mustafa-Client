@@ -36,11 +36,23 @@ const Home = () => {
       <Beverage />
       {/*imbed map here */}
       <section className="my-10">
-        <h2 className="text-4xl font-bold text-center">Find Us Here</h2>
+        <h2
+          className="text-4xl font-bold text-center"
+          style={{
+            marginTop: "8em",
+          }}
+        >
+          Find Us Here
+        </h2>
         <div className="flex justify-center mt-6">
           <iframe
-            className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 h-80"
-            style={{ border: 0 }}
+            className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 h-80 map_container"
+            style={{
+              marginTop: "2em",
+              border: 0,
+              width: "40em",
+              height: "25em",
+            }}
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
