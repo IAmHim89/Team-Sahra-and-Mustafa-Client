@@ -39,25 +39,28 @@ const Auth = (props) => {
 
   return (
     <div>
-      <div>
+      <div className="form_flex">
         <h3 style={{ color: "red" }}>{errorMsg}</h3>
         <form
+          className="form_container"
           onSubmit={(e) => {
             e.preventDefault();
             handleSignIn();
           }}
         >
-          <h1>Administrative Login</h1>
-          <input type="text" ref={inputRef} placeholder="AdminName" require />
-          <input
-            type="password"
-            ref={inputRef}
-            placeholder="Password"
-            require
-            min={5}
-            max={12}
-          />
-          <button onClick={handleCLick}>Admin Login</button>
+          <div className="input_flex">
+            <h1>Administrative Login</h1>
+            <input type="text" ref={inputRef} placeholder="AdminName" require />
+            <input
+              type="password"
+              ref={inputRef}
+              placeholder="Password"
+              require
+              min={5}
+              max={12}
+            />
+            <button onClick={handleCLick}>Admin Login</button>
+          </div>
         </form>
       </div>
     </div>

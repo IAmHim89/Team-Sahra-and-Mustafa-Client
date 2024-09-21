@@ -9,7 +9,7 @@ const Nav = () => {
       <nav className="navbar bg-base-100 shadow-md">
         <div className="flex-1">
           <Link
-            to="/"
+            to="/auth"
             className="btn btn-ghost normal-case text-xl canyon_city"
           >
             Canyon City Grill
@@ -32,7 +32,7 @@ const Nav = () => {
           </ul>
         </div>
         <div>
-          <button className="button_style">Menu</button>
+          <button className="button_style">Order Online</button>
         </div>
       </nav>
     </div>
