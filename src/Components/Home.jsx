@@ -40,6 +40,14 @@ const Home = () => {
           className="text-4xl font-bold text-center"
           style={{
             marginTop: "8em",
+            display: "inline-block",
+            borderBottom: "2px solid black",
+            borderRadius: "2em",
+            padding: ".5em 2em",
+            boxShadow: " 2px 2px 2px black",
+            color: " aqua",
+            fontFamily: "Abril fatface",
+            textShadow: "5px 5px 5px aqua",
           }}
         >
           Find Us Here

@@ -59,7 +59,7 @@ const Auth = (props) => {
               min={5}
               max={12}
             />
-            <button onClick={handleCLick}>Admin Login</button>
+            <button onClick={handleCLick}>Submit</button>
           </div>
         </form>
       </div>

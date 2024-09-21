@@ -41,7 +41,9 @@
     border-bottom: 2px solid black;
     border-radius: 2em;
     box-shadow: 2px 2px 8px black;
-    font: bolder;
+    font-weight: bolder;
+    background-color:  #242424;
+    color:  #242424;
     
 }
 .input_flex button:hover{
