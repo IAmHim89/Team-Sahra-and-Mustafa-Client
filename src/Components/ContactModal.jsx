@@ -5,7 +5,7 @@ const ContactModal = () => {
     <>
       {/* button to open the modal */}
       <button
-        className="btn btn-primary"
+        className="button_style"
         onClick={() => document.getElementById("contact_modal").showModal()}
       >
         Contact Us
