@@ -4,7 +4,7 @@ import "../Components/Css_files/Auth.css";
 
 const Auth = (props) => {
   const [errorMsg, setErrorMsg] = useState("");
-  const inputRef = useRef(null);
+  const inputRef = useRef("");
 
   const handleCLick = () => {
     inputRef.current.focus();
