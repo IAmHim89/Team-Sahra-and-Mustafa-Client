@@ -10,6 +10,7 @@ const Nav = () => {
         <div className="flex-1 justify-between items-center">
           CCGLogo
           <Link to="/">{/* placeCCG logo here */}</Link>
+
         </div>
         {/*center the links here */}
         <ul className="menu menu-horizontal p-0">
@@ -28,7 +29,7 @@ const Nav = () => {
         </ul>
         {/*menu button to the right*/}
         <div>
-          <button className="button_style">Menu</button>
+          <button className="button_style">Order Online</button>
         </div>
       </nav>
     </div>

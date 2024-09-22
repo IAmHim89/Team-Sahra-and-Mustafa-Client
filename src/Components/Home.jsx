@@ -36,9 +36,25 @@ const Home = () => {
       <Beverage />
       {/*imbed map here */}
       <section className="my-10">
-        <h2 className="text-4xl font-bold text-center">Find Us Here</h2>
+        <h2
+          className="text-4xl font-bold text-center"
+          style={{
+            marginTop: "8em",
+            display: "inline-block",
+            borderBottom: "2px solid black",
+            borderRadius: "2em",
+            padding: ".5em 2em",
+            boxShadow: " 2px 2px 2px black",
+            color: " aqua",
+            fontFamily: "Abril fatface",
+            textShadow: "5px 5px 5px aqua",
+          }}
+        >
+          Find Us Here
+        </h2>
         <div className="flex justify-center mt-6">
           <iframe
+
             className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 h-80"
             style={{ border: 0, width: "75vw", height: "20vh" }}
             loading="lazy"
