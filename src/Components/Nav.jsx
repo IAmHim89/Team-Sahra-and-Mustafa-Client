@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Css_files/Nav.css";
 import Contact from "./Contact";
-import ccgLogo from "../assets/images/ccgLogo";
+import ccgLogo from "../assets/images/CCG-Logo-100*76.jpg";
 
 const Nav = () => {
   return (
