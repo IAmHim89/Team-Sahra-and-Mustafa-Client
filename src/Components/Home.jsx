@@ -47,6 +47,7 @@ const Home = () => {
             boxShadow: " 2px 2px 2px black",
             color: " aqua",
             fontFamily: "Abril fatface",
+            fontWeight: "bolder",
             textShadow: "5px 5px 5px aqua",
           }}
         >

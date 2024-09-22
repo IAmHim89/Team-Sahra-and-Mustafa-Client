@@ -15,6 +15,10 @@
 nav{
 
     display: flex;
+
+   
+    
+
     justify-content:space-between;
     align-items: first center;
     padding: 1em 2em;
@@ -24,6 +28,7 @@ nav{
     
 
     
+
 
 }
 
