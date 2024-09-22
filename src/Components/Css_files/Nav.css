@@ -1,46 +1,69 @@
-nav{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:stretch;
-    align-items:first center;
-    gap: 4em;
-    position: fixed;
-    right: -50em;
-    margin-bottom: .5em;
-    
-   
-   
-    
-    
+*{
+    box-sizing:border-box
 }
 
 
-.canyon_city{
+.nav_container {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    font-family: Abril Fatface;
+}
+
+
+nav{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: first center;
+    padding: 1em 2em;
+    
+
+}
+
+/* for logo
+
+canyon_city{
     position: fixed;
     left: 2em;
-}
 
- li{
+     li{
     font-size: 1.5em;
 }
+}*/
 
-.button_style{
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bolder;
+
+.menu {
+    display: flex;
+    gap: .5em;
+    
+}
+
+
+.menu li {
+
+    font-size: 1.5em;
     font-family: Abril Fatface;
-    color: black;
-    border-bottom: 2px solid black;
-    border-radius: 2em;
-    box-shadow: 5px 5px 8px black;
-    padding: .5em 3em;
+    font-weight: bold;
+
+}
+
+.button_style {
+    font-size: 1em;
+    font-family: Abril Fatface;
+    padding: .5em 1.5em;
+    flex-shrink: 0;
     background-color: aqua;
+    border-radius: .5em;
+    box-shadow: 3px 3px 6px black;
+    cursor: pointer;
+
 }
 
 .button_style:hover{
     background-color: white;
     color: black;
     font-family: Abril Fatface;
-    box-shadow: 5px 5px 8px black;
     
 }
