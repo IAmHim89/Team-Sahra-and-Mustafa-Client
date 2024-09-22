@@ -1,7 +1,50 @@
 .contact_container {
-    border:2px solid black;
+    color: black;
+    padding: 20px;
 }
 
-.contact_container h1{
-    font-size: 3em;
+.map-iframe {
+    border: none;
 }
+
+.contact_container h1 {
+    color: aqua;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Abril Fatface';
+}
+
+.contact_container p {
+    color:white
+}
+
+#contact_modal button.button_style {
+    color: black;
+    padding: 0.5em 1.5em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  #contact_modal button.button_style:hover {
+    background-color: white;
+  }
+
+.find-us-here {
+    font-size: 1em;
+    font-weight: bold;
+    color: white
+}
+
+.button_style:hover {
+    background-color: white;
+    color: black;
+  }
+  .contact_container h1 {
+    margin-bottom: 1rem; /* for space below the header */
+  }
+  
+  .contact_container p {
+    margin-bottom: 2rem; /* for space below the paragraph */
+  }

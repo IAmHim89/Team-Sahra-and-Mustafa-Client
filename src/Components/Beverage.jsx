@@ -14,14 +14,7 @@ const Beverage = () => {
         voluptates illum praesentium dolore assumenda. Dolores velit odit
         exercitationem laborum incidunt error ipsum provident earum officiis
         nesciunt esse maiores fugiat necessitatibus et, dignissimos commodi quis
-        doloremque accusantium recusandae ea, aut hic ullam. Quos nisi ut magnam
-        assumenda! Minus reiciendis modi sequi deleniti aspernatur eos
-        architecto iusto voluptatem iste earum reprehenderit veniam magni rerum
-        blanditiis, quod a fugiat placeat quas illo quaerat quisquam, autem
-        beatae laudantium! Iure voluptates odio illo non asperiores accusantium,
-        tempora ipsa voluptatum provident reiciendis quis, sit delectus nesciunt
-        consequatur. Consequuntur aut obcaecati sapiente corporis provident modi
-        quibusdam.
+        doloremque accusantium recusandae ea, aut hic ullam.
       </p>
 
       <div className="img_flex">
