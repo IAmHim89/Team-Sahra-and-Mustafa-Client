@@ -40,7 +40,7 @@ const Home = () => {
         <div className="flex justify-center mt-6">
           <iframe
             className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 h-80"
-            style={{ border: 0 }}
+            style={{ border: 0, width: "75vw", height: "20vh" }}
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"

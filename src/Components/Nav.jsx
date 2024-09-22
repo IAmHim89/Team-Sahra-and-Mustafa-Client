@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Css_files/Nav.css";
 import Contact from "./Contact";
+import ccgLogo from "../assets/images/ccgLogo";
 
 const Nav = () => {
   return (
@@ -12,7 +13,8 @@ const Nav = () => {
             to="/"
             className="btn btn-ghost normal-case text-xl canyon_city"
           >
-            Canyon City Grill
+            {/* placeCCG logo here */}
+            <img src={logo} alt="Canyon City Grill" className="h-10 w-auto" />
           </Link>
         </div>
         <div className="flex-none">
