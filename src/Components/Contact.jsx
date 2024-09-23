@@ -24,9 +24,9 @@ const Contact = () => {
       </section>
       {/*Contact Section */}
       <div className="container mx-auto my-10 p-6 bg-base-100 shadow-lg rounded-lg">
-        <h1 className="text-5xl font-bold text-center contact-header">
+        {/* <h1 className="text-5xl font-bold text-center contact-header">
           Get In Touch
-        </h1>
+        </h1> */}
         <p className="text-center mt-4 text-2xl ">
           We love hearing from our customers! Click the button below to send us
           a message.
