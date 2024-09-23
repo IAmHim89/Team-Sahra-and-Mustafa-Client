@@ -12,29 +12,21 @@
 }
 
 
-nav{
+.navbar{
 
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
-    padding: 1em 2em;
-
-   
-    
-
+    padding: 1em 3em;
 
 }
 
-/* for logo
-
-canyon_city{
-    position: fixed;
-    left: 2em;
-
-     li{
-    font-size: 1.5em;
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-}*/
 
 
 .menu {
@@ -55,7 +47,7 @@ canyon_city{
 .button_style {
     font-size: 1em;
     font-family: Abril Fatface;
-    padding: .5em 1.5em;
+    padding: .5em 1em;
     background-color: aqua;
     border-radius: .5em;
     box-shadow: 3px 3px 6px black;
