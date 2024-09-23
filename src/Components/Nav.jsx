@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Css_files/Nav.css";
 import Contact from "./Contact";
+import ccgImg from "../assets/images/CcgLogo.jpg";
 
 const Nav = () => {
   return (
     <div className="nav_container">
       <nav className="navbar">
         <div className="flex-1 justify-between items-center">
-          <Link to="/auth">CCGLogo</Link>
+          <Link to="/auth">
+            <img src={ccgImg} />
+          </Link>
         </div>
         {/*center the links here */}
         <ul className="menu menu-horizontal p-0">

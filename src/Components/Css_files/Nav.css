@@ -15,18 +15,11 @@
 nav{
 
     display: flex;
-
-   
-    
-
-    justify-content:space-between;
-    align-items: first center;
+    justify-content:center;
+    align-items: center;
     padding: 1em 2em;
 
    
-   
-    
-
     
 
 
@@ -46,7 +39,7 @@ canyon_city{
 
 .menu {
     display: flex;
-    gap: .5em;
+    gap: 1em;
     
 }
 
@@ -63,7 +56,6 @@ canyon_city{
     font-size: 1em;
     font-family: Abril Fatface;
     padding: .5em 1.5em;
-    flex-shrink: 0;
     background-color: aqua;
     border-radius: .5em;
     box-shadow: 3px 3px 6px black;
