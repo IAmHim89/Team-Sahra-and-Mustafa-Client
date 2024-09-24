@@ -26,6 +26,11 @@ const Nav = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          {localStorage.getItem("myToken") && (
+            <li>
+              <Link to="/contact">LogOut</Link>
+            </li>
+          )}
         </ul>
         <div>
           <button className="button_style">Order Online</button>
