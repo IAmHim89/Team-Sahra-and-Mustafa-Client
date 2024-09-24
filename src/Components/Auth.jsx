@@ -1,13 +1,15 @@
 import React from "react";
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../Components/Css_files/Auth.css";
 
 const Auth = (props) => {
   const [errorMsg, setErrorMsg] = useState("");
-  const inputRef = useRef("");
+  const adminRef = useRef("");
+  const passwordRef = useRef("");
 
   const handleCLick = () => {
-    inputRef.current.focus();
+    passwordRef.current.focus();
   };
 
   console.log(props.updateToken);
@@ -20,8 +22,8 @@ const Auth = (props) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          adminName: adminName,
-          password: password,
+          adminName: adminRef.current.value,
+          password: passwordRef.current.value,
         }),
       });
 
@@ -50,10 +52,10 @@ const Auth = (props) => {
         >
           <div className="input_flex">
             <h1>Administrative Login</h1>
-            <input type="text" ref={inputRef} placeholder="AdminName" require />
+            <input type="text" ref={adminRef} placeholder="AdminName" require />
             <input
               type="password"
-              ref={inputRef}
+              ref={passwordRef}
               placeholder="Password"
               require
               min={5}
