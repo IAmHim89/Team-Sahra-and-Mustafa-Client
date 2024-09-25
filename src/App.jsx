@@ -19,7 +19,7 @@ function App() {
     if (token) {
       setPersonalToken(token);
     }
-  });
+  }, []);
 
   const updateToken = (token) => {
     console.log("You have updated your token");
