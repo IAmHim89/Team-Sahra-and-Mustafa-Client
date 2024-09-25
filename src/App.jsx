@@ -66,11 +66,11 @@ function App() {
                       top: 0,
                       right: 0,
                       margin: "1em",
-                      backgroundColor: "aqua",
+                      backgroundColor: "orangered",
                     }}
                     onClick={() => removeToken()}
                   >
-                    LogOut
+                    Logout
                   </button>
                 </>
               )
