@@ -38,7 +38,7 @@ function App() {
     <div>
       {/* Navbar */}
 
-      <Nav />
+      <Nav removeToken={removeToken} />
 
       {/* Header */}
       <header>
@@ -53,29 +53,7 @@ function App() {
           <Route path="/beverage" element={<Beverage />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/auth"
-            element={
-              !personalToken ? (
-                <Auth updateToken={updateToken} />
-              ) : (
-                <>
-                  <button
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      right: 0,
-                      margin: "1em",
-                      backgroundColor: "orangered",
-                    }}
-                    onClick={() => removeToken()}
-                  >
-                    Logout
-                  </button>
-                </>
-              )
-            }
-          />
+          <Route path="/auth" element={<Auth updateToken={updateToken} />} />
         </Routes>
       </main>
 

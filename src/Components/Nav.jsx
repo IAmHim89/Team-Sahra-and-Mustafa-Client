@@ -2,14 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Css_files/Nav.css";
 import ccgImg from "../assets/images/CcgLogo.jpg";
+import { Avatar } from "react-daisyui";
 
-const Nav = () => {
+const Nav = ({ removeToken }) => {
   return (
     <div className="nav_container">
       <nav className="navbar">
         <div className="flex-1 justify-between items-center">
-          <Link to="/auth">
-            <img src={ccgImg} className="logo" alt="Canyon City Girll logo" />
+          <Link
+            to="/auth"
+            style={{
+              padding: "1em",
+              backgroundColor: "white",
+              borderRadius: "70em",
+              height: "5em",
+              width: "5em",
+            }}
+          >
+            <img
+              src={ccgImg}
+              className="logo"
+              alt="Canyon City Grill logo"
+              style={{
+                borderRadius: "0",
+              }}
+            />
           </Link>
         </div>
         {/*center the links here */}
@@ -28,7 +45,7 @@ const Nav = () => {
           </li>
           {localStorage.getItem("myToken") && (
             <li>
-              <Link to="/contact">LogOut</Link>
+              <button onClick={() => removeToken()}>LogOut</button>
             </li>
           )}
         </ul>
