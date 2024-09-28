@@ -20,12 +20,12 @@
     border: 2px solid black;
     box-shadow: 5px 5px 5px black;
     padding: 1em;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 1em;
 }
 
 .aboutUs h1 {
-    font-size: 5em;
+    font-size: 3em;
     border-radius: 2em;
     border-bottom: 2px solid black;
     box-shadow: 5px 5px 5px black;
@@ -44,11 +44,11 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .bottom_border{
     border-bottom: 5px solid black;
-    margin-top: 10em;
+    margin-top: 5em;
     box-shadow: 5px 5px 8px black;
 }

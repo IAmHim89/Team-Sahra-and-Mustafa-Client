@@ -3,11 +3,11 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .beverage_flex h1{
-    font-size: 5em;
+    font-size: 3em;
     border-radius: 2em;
     border-bottom: 2px solid black;
     box-shadow: 5px 5px 5px black;

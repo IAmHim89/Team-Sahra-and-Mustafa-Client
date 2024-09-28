@@ -17,6 +17,7 @@ const Nav = ({ removeToken }) => {
               borderRadius: "70em",
               height: "5em",
               width: "5em",
+              marginLeft: "1em",
             }}
           >
             <img
@@ -41,7 +42,7 @@ const Nav = ({ removeToken }) => {
             <Link to="/reviews">Reviews</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Location</Link>
           </li>
           {localStorage.getItem("myToken") && (
             <li>
