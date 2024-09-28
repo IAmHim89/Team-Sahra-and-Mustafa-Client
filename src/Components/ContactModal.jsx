@@ -62,7 +62,7 @@ const ContactModal = () => {
           {/*Modal Close Button */}
           <div className="modal-action">
             <button
-              className="btn"
+              className="btn modal_btn"
               onClick={() => document.getElementById("contact_modal").close()}
             >
               Close

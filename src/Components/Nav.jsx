@@ -46,12 +46,14 @@ const Nav = ({ removeToken }) => {
           </li>
           {localStorage.getItem("myToken") && (
             <li>
-              <button onClick={() => removeToken()}>LogOut</button>
+              <button className="logout_btn" onClick={() => removeToken()}>
+                LogOut
+              </button>
             </li>
           )}
         </ul>
         <div>
-          <button className="button_style">Order Online</button>
+          <button className="nav_button_style">Order Online</button>
         </div>
       </nav>
     </div>

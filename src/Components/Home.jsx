@@ -14,7 +14,7 @@ const Home = () => {
       <div className="carousel_container">
         <Carousel
           style={{
-            width: "100%",
+            width: "90%",
             height: "30em",
             marginBottom: "2em",
             marginTop: "3em",
@@ -55,7 +55,6 @@ const Home = () => {
         </h2>
         <div className="flex justify-center mt-6">
           <iframe
-
             className="w-full sm:w-4/5 md:w-3/5 lg:w-1/2 h-80"
             style={{ border: 0, width: "75vw", height: "20vh" }}
             loading="lazy"
