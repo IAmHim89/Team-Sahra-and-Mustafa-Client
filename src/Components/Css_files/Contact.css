@@ -29,6 +29,7 @@
   
   #contact_modal button.button_style:hover {
     background-color: white;
+    
   }
 
 .find-us-here {
@@ -48,3 +49,5 @@
   .contact_container p {
     margin-bottom: 2rem; /* for space below the paragraph */
   }
+
+  
