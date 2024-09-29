@@ -1,8 +1,12 @@
 import React from "react";
-import ContactModal from "../Components/ContactModal";
 import "../Components/Css_files/Contact.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("manwrdnb");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div className="contact_container">
       {/*Map Section */}
@@ -23,15 +27,25 @@ const Contact = () => {
         </div>
       </section>
       {/*Contact Section */}
-      <div className="container mx-auto my-10 p-6 bg-base-100 shadow-lg rounded-lg">
-        <p className="text-center mt-4 text-2xl ">
-          We love hearing from our customers! Click the button below to send us
-          a message.
-        </p>
-        {/* Trigger the Contact Modal */}
-        <div className="flex justify-center mt-8">
-          <ContactModal /> {/* Render the responsive modal with contact form */}
-        </div>
+      <div className="form_flex">
+        <form
+          action="https://formspree.io/f/manwrdnb"
+          method="POST"
+          onSubmit={handleSubmit}
+        >
+          <label htmlFor="email">Email Address</label>
+          <input id="email" type="email" name="email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <textarea id="message" name="message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+          <button type="submit" disabled={state.submitting}>
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
