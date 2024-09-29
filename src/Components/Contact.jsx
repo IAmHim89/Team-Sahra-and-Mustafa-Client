@@ -8,7 +8,7 @@ const Contact = () => {
       {/*Map Section */}
       <section className="my-10">
         <h2 className="text-4xl font-bold text-center find-us-here">
-          Find Us Here
+          Find us here!
         </h2>
 
         <div className="flex justify-center mt-6">
@@ -24,9 +24,6 @@ const Contact = () => {
       </section>
       {/*Contact Section */}
       <div className="container mx-auto my-10 p-6 bg-base-100 shadow-lg rounded-lg">
-        {/* <h1 className="text-5xl font-bold text-center contact-header">
-          Get In Touch
-        </h1> */}
         <p className="text-center mt-4 text-2xl ">
           We love hearing from our customers! Click the button below to send us
           a message.

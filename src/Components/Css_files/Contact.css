@@ -7,47 +7,57 @@
     border: none;
 }
 
+.find-us-here {
+  font-family: 'Abril Fatface';
+  font-size: 1.5em;
+  font-weight: bold;
+  color: aqua;
+  padding: .5em;
+  text-align: center;
+}
+
 .contact_container h1 {
     color: aqua;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: bold;
     font-family: 'Abril Fatface';
+    
 }
 
 .contact_container p {
-    color:white
+
+  color:white;
+  font-family: 'Abril Fatface';
+  padding: 1em;
+      
 }
 
-#contact_modal button.button_style {
-    color: black;
-    padding: 0.5em 1.5em;
-    border: 2px solid black;
-    border-radius: 0.5em;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-  
-  #contact_modal button.button_style:hover {
-    background-color: white;
-    
-  }
+.button_style {
+  background-color: aqua;
+  font-weight: bold;
+  font-family: 'Abril Fatface';
+  color: black;
+  padding: .5em 1em;
+  width: 100%;
+  border: 2px solid black;
+  border-radius:.5em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 150px; 
+  display: block;
+  text-align: center;
 
-.find-us-here {
-    font-size: 1em;
-    font-weight: bold;
-    color: white
 }
 
 .button_style:hover {
-    background-color: white;
-    color: black;
-  }
-  .contact_container h1 {
-    margin-bottom: 1rem; /* for space below the header */
-  }
-  
-  .contact_container p {
-    margin-bottom: 2rem; /* for space below the paragraph */
-  }
+  background-color: aqua;
+  color: black;
+}
+
+
+
+
+
 
   
