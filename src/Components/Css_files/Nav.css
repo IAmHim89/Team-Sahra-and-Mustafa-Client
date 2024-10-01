@@ -12,12 +12,9 @@
     left: 0em;
     z-index: 10;
     font-family: Abril Fatface;
-
 }
 
-
 .navbar{
-
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -35,33 +32,25 @@
     margin: 0 auto;
 }
 
-
 .menu {
     display: flex;
     gap: 1em;
-    
 }
 
 
 .menu li {
-
     font-size: 1.5em;
     font-family: Abril Fatface;
     font-weight: bold;
     color: black;
-
 }
+
 .menu li:hover {
 
     font-size: 1.5em;
     font-family: Abril Fatface;
     font-weight: bold;
     color: white;
-    
-    
-   
-   
-
 }
 
 .nav_button_style {
@@ -80,8 +69,7 @@
 .button_style:hover{
     background-color: white;
     color: black;
-    font-family: Abril Fatface;
-    
+    font-family: Abril Fatface;    
 }
 
 .logout_btn{
@@ -90,10 +78,9 @@
     color: black;
     box-shadow: 2px 2px 8px black;
 }
+
 .logout_btn:hover{
-    border: 2px solid black;
-    
+    border: 2px solid black;    
     color: black;
     box-shadow: 2px 2px 8px black;
-    
 }

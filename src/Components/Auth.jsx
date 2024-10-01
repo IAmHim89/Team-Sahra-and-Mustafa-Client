@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Components/Css_files/Auth.css";
+import UploadImg from "./UploadImg";
 
 const Auth = (props) => {
   const [errorMsg, setErrorMsg] = useState("");
@@ -65,6 +66,7 @@ const Auth = (props) => {
           </div>
         </form>
       </div>
+      <UploadImg />
     </div>
   );
 };
