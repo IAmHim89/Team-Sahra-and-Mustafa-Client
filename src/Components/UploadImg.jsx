@@ -19,7 +19,7 @@ const UploadImg = () => {
       e.preventDefault();
       const formData = new FormData();
       formData.append("image", image);
-      formData.append("name", image);
+      formData.append("name", "header-Img1");
       const response = await fetch("http://localhost:3001/image/uploadImg", {
         method: "POST",
         headers: {
@@ -38,9 +38,7 @@ const UploadImg = () => {
     try {
       const response = await fetch("http://localhost:3001/image/all", {
         method: "GET",
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("myToken"),
-        },
+        headers: {},
       });
       const json = await response.json();
       console.log(json);
