@@ -47,6 +47,19 @@ const UploadImg = () => {
       console.log(err);
     }
   };
+  const imageUpdate = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/image/update/:id", {
+        method: "PUT",
+        headers: {},
+      });
+      const json = await response.json();
+      console.log(json);
+      setAllImages(json.updateImage);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div>
