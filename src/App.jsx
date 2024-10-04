@@ -9,6 +9,7 @@ import Review from "./Components/Review";
 import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import AdminPortal from "./Components/AdminPortal";
 
 function App() {
   const [personalToken, setPersonalToken] = useState("");
@@ -53,13 +54,13 @@ function App() {
   return (
     <div>
       {/* Navbar */}
-
       <Nav removeToken={removeToken} />
 
       {/* Header */}
       <header>
         <Header />
       </header>
+      <AdminPortal allImages={allImages} />
 
       {/* Routes */}
       <main>
