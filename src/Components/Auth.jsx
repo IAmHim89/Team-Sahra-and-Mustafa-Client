@@ -66,7 +66,7 @@ const Auth = (props) => {
           </div>
         </form>
       </div>
-      <UploadImg />
+      {/* <UploadImg /> */}
     </div>
   );
 };

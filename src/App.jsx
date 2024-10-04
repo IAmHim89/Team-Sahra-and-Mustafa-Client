@@ -12,6 +12,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
   const [personalToken, setPersonalToken] = useState("");
+  const [allImages, setAllImages] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
     if (token) {
       setPersonalToken(token);
     }
+    imgDownload();
   }, []);
 
   const updateToken = (token) => {
@@ -32,6 +34,20 @@ function App() {
     console.log("Your token has been removed!");
     setPersonalToken("");
     localStorage.clear();
+  };
+
+  const imgDownload = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/image/all", {
+        method: "GET",
+        headers: {},
+      });
+      const json = await response.json();
+      console.log(json);
+      setAllImages(json.allImages);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

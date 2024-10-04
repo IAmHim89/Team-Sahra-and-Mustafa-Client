@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 
 const UploadImg = () => {
   const [image, setImage] = useState("");
-  const [allImages, setAllImages] = useState([]);
 
   useEffect(() => {
     imgDownload();
@@ -34,24 +33,12 @@ const UploadImg = () => {
     }
   };
 
-  const imgDownload = async () => {
-    try {
-      const response = await fetch("http://localhost:3001/image/all", {
-        method: "GET",
-        headers: {},
-      });
-      const json = await response.json();
-      console.log(json);
-      setAllImages(json.allImages);
-    } catch (err) {
-      console.log(err);
-    }
-  };
   const imageUpdate = async () => {
     try {
       const response = await fetch("http://localhost:3001/image/update/:id", {
         method: "PUT",
-        headers: {},
+
+        headers: { Authorization: "Bearer " + localStorage.getItem("myToken") },
       });
       const json = await response.json();
       console.log(json);
