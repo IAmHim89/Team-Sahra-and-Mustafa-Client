@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Css_files/Admin.css";
 
 const AdminPortal = ({ allImages }) => {
   return (
@@ -6,8 +7,21 @@ const AdminPortal = ({ allImages }) => {
       <p>hello world</p>
       {allImages?.map((img) => {
         return (
-          <div>
-            <p> {img.name}</p>
+          <div className="table_container">
+            <table>
+              <tr>
+                <th>Image name</th>
+                <th>Image Upload </th>
+              </tr>
+              <tr>
+                <td>
+                  <p> {img.name}</p>
+                </td>
+                <td>
+                  <input type="file" accept="image/*" />
+                </td>
+              </tr>
+            </table>
           </div>
         );
       })}
