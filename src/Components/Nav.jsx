@@ -12,21 +12,21 @@ const Nav = ({ removeToken }) => {
           <Link
             to="/auth"
             style={{
-              padding: "1em",
+              padding: ".7em",
               backgroundColor: "white",
-              borderRadius: "70em",
-              height: "5em",
-              width: "5em",
-              marginLeft: "1em",
+              borderRadius: "50%",
+              filter: "drop-shadow(.2em .2em .5em black)",
             }}
           >
             <img
-              src={ccgImg}
-              className="logo"
-              alt="Canyon City Grill logo"
               style={{
-                borderRadius: "0",
+                borderRadius: "30%",
+                height: "4em",
+                width: "4em",
+                objectFit: "contain",
               }}
+              src={ccgImg}
+              alt="Canyon City Grill logo"
             />
           </Link>
         </div>

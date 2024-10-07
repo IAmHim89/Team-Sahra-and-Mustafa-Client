@@ -1,11 +1,42 @@
 import React, { useState, useEffect } from "react";
 import "./Css_files/Admin.css";
 
-const AdminPortal = ({ allImages }) => {
+const AdminPortal = ({ allImages, imgDownload }) => {
+  const [image, setImage] = useState("");
+
+  function turnToBase64(e) {
+    setImage(e.target.files[0]);
+  }
+
+  const imageUpdate = async (imgId) => {
+    try {
+      const formData = new FormData();
+      formData.append("image", image);
+      const response = await fetch(
+        `http://localhost:3001/image/update/${imgId}`,
+        {
+          method: "PUT",
+
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("myToken"),
+          },
+          body: formData,
+        }
+      );
+      const json = await response.json();
+      console.log(json);
+      imgDownload();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div>
       <p>hello world</p>
       {allImages?.map((img) => {
+        const dataUrl = `data:${img.myFile.mimetype};base64,${img.myFile.buffer}`;
+        console.log(img._id);
         return (
           <div className="table_container">
             <table>
@@ -15,10 +46,21 @@ const AdminPortal = ({ allImages }) => {
               </tr>
               <tr>
                 <td>
-                  <p> {img.name}</p>
+                  <p>
+                    {" "}
+                    <img src={dataUrl} /> {img.name}
+                  </p>
                 </td>
                 <td>
-                  <input type="file" accept="image/*" />
+                  <input
+                    name="image"
+                    accept="image/*"
+                    type="file"
+                    onChange={turnToBase64}
+                  />
+                  <button onClick={() => imageUpdate(img._id)}>
+                    Upload Image
+                  </button>
                 </td>
               </tr>
             </table>

@@ -33,21 +33,6 @@ const UploadImg = () => {
     }
   };
 
-  const imageUpdate = async () => {
-    try {
-      const response = await fetch("http://localhost:3001/image/update/:id", {
-        method: "PUT",
-
-        headers: { Authorization: "Bearer " + localStorage.getItem("myToken") },
-      });
-      const json = await response.json();
-      console.log(json);
-      setAllImages(json.updateImage);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   return (
     <div>
       {allImages.map((image) => {
