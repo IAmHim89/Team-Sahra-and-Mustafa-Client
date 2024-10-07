@@ -60,7 +60,7 @@ function App() {
       <header>
         <Header />
       </header>
-      <AdminPortal allImages={allImages} />
+      <AdminPortal imgDownload={imgDownload} allImages={allImages} />
 
       {/* Routes */}
       <main>
