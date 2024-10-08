@@ -13,9 +13,11 @@ margin-right: 1em;
 
 .table_container table{
     box-shadow: 2px 2px 8px black;
-    width: 30em;
+    width: 25em;
+    height: auto;
     border-radius: 2em;
     margin-bottom: .5em;
+    text-align: center;
 }
 
 .table_container input{
@@ -24,4 +26,8 @@ margin-right: 1em;
     margin: 1em 0em;
     background-color: black;
 }
-
+.table_container img{
+    width: 6em;
+    height: 5em;
+    margin:.3em  1em;
+}

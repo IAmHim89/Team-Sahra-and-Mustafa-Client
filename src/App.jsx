@@ -58,7 +58,7 @@ function App() {
 
       {/* Header */}
       <header>
-        <Header />
+        <Header allImages={allImages} />
       </header>
       <AdminPortal imgDownload={imgDownload} allImages={allImages} />
 
