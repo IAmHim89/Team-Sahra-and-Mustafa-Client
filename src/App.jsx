@@ -28,7 +28,7 @@ function App() {
     console.log("You have updated your token");
     localStorage.setItem("myToken", token);
     setPersonalToken(token);
-    navigate("/");
+    navigate("/admin");
   };
 
   const removeToken = () => {
@@ -60,7 +60,7 @@ function App() {
       <header>
         <Header allImages={allImages} />
       </header>
-      <AdminPortal imgDownload={imgDownload} allImages={allImages} />
+      {/* <AdminPortal imgDownload={imgDownload} allImages={allImages} /> */}
 
       {/* Routes */}
       <main>
@@ -70,6 +70,13 @@ function App() {
           <Route path="/beverage" element={<Beverage />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/admin"
+            element={
+              <AdminPortal imgDownload={imgDownload} allImages={allImages} />
+            }
+          />
+
           <Route path="/auth" element={<Auth updateToken={updateToken} />} />
         </Routes>
       </main>
