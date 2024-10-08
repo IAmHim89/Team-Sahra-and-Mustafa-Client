@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const UploadImg = () => {
+const UploadImg = ({ allImages, imgDownload }) => {
   const [image, setImage] = useState("");
+  const [name, setName] = useState("");
 
   useEffect(() => {
     imgDownload();
@@ -18,7 +19,7 @@ const UploadImg = () => {
       e.preventDefault();
       const formData = new FormData();
       formData.append("image", image);
-      formData.append("name", "header-Img1");
+      formData.append("name", name);
       const response = await fetch("http://localhost:3001/image/uploadImg", {
         method: "POST",
         headers: {
@@ -35,7 +36,7 @@ const UploadImg = () => {
 
   return (
     <div>
-      {allImages.map((image) => {
+      {allImages?.map((image) => {
         console.log(image);
         const dataUrl = `data:${image.myFile.mimetype};base64,${image.myFile.buffer}`;
         return (
@@ -47,7 +48,13 @@ const UploadImg = () => {
       <div>
         Lets Upload Image
         <form onSubmit={imgUpload}>
-          <input name="name" type="text" placeholder="name" />
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            name="name"
+            type="text"
+            placeholder="name"
+          />
           <input
             name="image"
             accept="image/*"

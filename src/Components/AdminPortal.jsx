@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Css_files/Admin.css";
+import UploadImg from "./UploadImg";
 
 const AdminPortal = ({ allImages, imgDownload }) => {
   const [image, setImage] = useState("");
@@ -67,6 +68,7 @@ const AdminPortal = ({ allImages, imgDownload }) => {
           </div>
         );
       })}
+      <UploadImg imgDownload={imgDownload} allImages={allImages} />
     </div>
   );
 };
