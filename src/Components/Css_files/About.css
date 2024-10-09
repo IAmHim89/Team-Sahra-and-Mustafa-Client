@@ -36,6 +36,11 @@
     font-weight: bolder;
 }
 
+.aboutus_img{
+    max-width: 25em;
+    max-height: 25em;
+}
+
 .images{
     width: 30vw;
     height: 20em;
