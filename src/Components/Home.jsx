@@ -8,7 +8,7 @@ import "../Components/Css_files/Home.css";
 import About from "./About";
 import Beverage from "./Beverage";
 //this is a comment
-const Home = () => {
+const Home = ({ allImages }) => {
   return (
     <div>
       <div className="carousel_container">
@@ -32,7 +32,7 @@ const Home = () => {
         <Button color="accent">Order Online</Button>
       </div>
       <div className="spacing_line"></div>
-      <About />
+      <About allImages={allImages} />
       <Beverage />
     </div>
   );

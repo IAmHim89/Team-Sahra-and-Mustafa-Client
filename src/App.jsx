@@ -65,8 +65,8 @@ function App() {
       {/* Routes */}
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About allImages={allImages} />} />
+          <Route path="/" element={<Home allImages={allImages} />} />
+          {/* <Route path="/about" element={<About allImages={allImages} />} /> */}
           <Route path="/beverage" element={<Beverage />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/contact" element={<Contact />} />
