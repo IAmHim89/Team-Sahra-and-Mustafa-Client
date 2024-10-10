@@ -11,24 +11,24 @@ const About = ({ allImages }) => {
   const [imgUrl2, setImgUrl2] = useState("");
 
   useEffect(() => {
-    console.log(allImages);
-    if (allImages.length > 0) {
-      setAboutImg(allImages.filter((img) => img.name === "aboutUs-Img1")[0]);
-      setAboutImg2(allImages.filter((img) => img.name === "aboutUs-Img2")[0]);
+    // console.log(allImages);
+    if (allImages?.length > 0) {
+      setAboutImg(allImages?.filter((img) => img.name === "aboutUs-Img1")[0]);
+      setAboutImg2(allImages?.filter((img) => img.name === "aboutUs-Img2")[0]);
       console.log(allImages);
     }
   }, [allImages]);
   useEffect(() => {
-    if (aboutImg) {
-      setImgUrl(
-        `data:${aboutImg.myFile.mimetype};base64,${aboutImg.myFile.buffer}`
-      );
-    } else if (aboutImg2) {
-      setImgUrl2(
-        `data:${aboutImg2.myFile.mimetype};base64,${aboutImg2.myFile.buffer}`
-      );
-    }
-    console.log("line 30 ", aboutImg, aboutImg2);
+    // if (aboutImg) {
+    //   setImgUrl(
+    //     `data:${aboutImg.myFile.mimetype};base64,${aboutImg.myFile.buffer}`
+    //   );
+    // } else if (aboutImg2) {
+    //   setImgUrl2(
+    //     `data:${aboutImg2.myFile.mimetype};base64,${aboutImg2.myFile.buffer}`
+    //   );
+    // }
+    // console.log("line 30 ", aboutImg, aboutImg2);
   }, [aboutImg]);
   return (
     <div>
@@ -40,8 +40,16 @@ const About = ({ allImages }) => {
           </p>
         </div>
         <div className="images">
-          <img src={imgUrl} alt="Image" className="aboutus_img" />
-          <img src={imgUrl2} alt="Image" className="aboutus_img" />
+          <img
+            src={`data:${aboutImg?.myFile?.mimetype};base64,${aboutImg?.myFile?.buffer}`}
+            alt="Image"
+            className="aboutus_img"
+          />
+          <img
+            src={`data:${aboutImg2?.myFile?.mimetype};base64,${aboutImg2?.myFile?.buffer}`}
+            alt="Image"
+            className="aboutus_img"
+          />
         </div>
       </div>
       <div className="bottom_border"></div>
