@@ -42,7 +42,7 @@ const Auth = (props) => {
 
   return (
     <div>
-      <div className="form_flex">
+      <div className="form_flex2">
         <h3 style={{ color: "red" }}>{errorMsg}</h3>
         <form
           className="form_container"
@@ -52,7 +52,7 @@ const Auth = (props) => {
           }}
         >
           <div className="input_flex">
-            <h1>Administrative Login</h1>
+            <h2>Administrative Login</h2>
             <input type="text" ref={adminRef} placeholder="AdminName" require />
             <input
               type="password"
