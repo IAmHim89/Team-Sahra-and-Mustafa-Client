@@ -16,10 +16,13 @@ const Home = ({ allImages }) => {
   console.log(carouselArray);
   return (
     <div>
+      {/*  <div className="carouselHeader_container">
+      </div> */}
       <div className="carousel_container">
+        <h1>Burgers & More</h1>
         <Carousel
           style={{
-            width: "90%",
+            width: "50%",
             height: "30em",
             marginBottom: "2em",
             marginTop: "3em",
@@ -36,13 +39,13 @@ const Home = ({ allImages }) => {
           <Carousel.Item src={chickenImg} alt="City" />
           <Carousel.Item src={cheeseSteakImg} alt="City" /> */}
         </Carousel>
-      </div>
-      <div className="button_container">
-        <Button color="accent">Order Online</Button>
+        <div className="button_container">
+          <Button color="accent">Order Online</Button>
+        </div>
       </div>
       <div className="spacing_line"></div>
       <About allImages={allImages} />
-      <Beverage />
+      <Beverage allImages={allImages} />
     </div>
   );
 };
