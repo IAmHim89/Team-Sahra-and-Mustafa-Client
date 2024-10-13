@@ -8,13 +8,11 @@ const About = ({ allImages }) => {
   const [aboutImg, setAboutImg] = useState("");
   const [aboutImg2, setAboutImg2] = useState("");
   const [imgUrl, setImgUrl] = useState("");
-  const [imgUrl2, setImgUrl2] = useState("");
 
   useEffect(() => {
     // console.log(allImages);
     if (allImages?.length > 0) {
       setAboutImg(allImages?.filter((img) => img.name === "aboutUs-Img1")[0]);
-      setAboutImg2(allImages?.filter((img) => img.name === "aboutUs-Img2")[0]);
       console.log(allImages);
     }
   }, [allImages]);
@@ -33,20 +31,30 @@ const About = ({ allImages }) => {
   return (
     <div>
       <div className="about_container">
+        <h1>About Us</h1>
         <div className="aboutUs">
-          <h1>About Us</h1>
           <p>
             Welcome to our family restaurant in beautiful Canyon City Texas!
+            <section>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+              inventore fugiat corrupti praesentium repellat laboriosam est
+              harum enim iure veniam molestiae cumque, quas laborum voluptatem
+              incidunt reprehenderit accusamus. Sequi autem labore nesciunt
+              dignissimos a, esse, ea fugit, numquam officia quos nam dicta illo
+              illum ipsam necessitatibus accusantium? Nemo natus inventore
+              delectus architecto soluta, officiis assumenda at incidunt rem,
+              voluptatibus non molestias temporibus, sequi labore minus.
+              Ratione, repellendus quod autem assumenda quibusdam recusandae at
+              voluptatibus accusamus in quae dolor, ab eligendi quam culpa
+              similique odio vero facere! Inventore quos earum ab quas
+              voluptatum magnam quisquam ipsa dolorum impedit quod, fugit
+              repellat?
+            </section>
           </p>
         </div>
         <div className="images">
           <img
             src={`data:${aboutImg?.myFile?.mimetype};base64,${aboutImg?.myFile?.buffer}`}
-            alt="Image"
-            className="aboutus_img"
-          />
-          <img
-            src={`data:${aboutImg2?.myFile?.mimetype};base64,${aboutImg2?.myFile?.buffer}`}
             alt="Image"
             className="aboutus_img"
           />
@@ -58,3 +66,13 @@ const About = ({ allImages }) => {
 };
 
 export default About;
+
+// const [imgUrl2, setImgUrl2] = useState("");
+// setAboutImg2(allImages?.filter((img) => img.name === "aboutUs-Img2")[0]);
+{
+  /* <img
+  src={`data:${aboutImg2?.myFile?.mimetype};base64,${aboutImg2?.myFile?.buffer}`}
+  alt="Image"
+  className="aboutus_img"
+/> */
+}
