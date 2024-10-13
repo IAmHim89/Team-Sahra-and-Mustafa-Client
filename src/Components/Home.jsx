@@ -9,6 +9,11 @@ import About from "./About";
 import Beverage from "./Beverage";
 //this is a comment
 const Home = ({ allImages }) => {
+  const carouselArray = allImages.filter((i) =>
+    i.name.toLowerCase().includes("carousel")
+  );
+  // const carouselArray = [bbqImg, burgerImg, chickenImg, cheeseSteakImg];
+  console.log(carouselArray);
   return (
     <div>
       <div className="carousel_container">
@@ -22,10 +27,14 @@ const Home = ({ allImages }) => {
           display="sequential"
           className="rounded-box"
         >
-          <Carousel.Item src={bbqImg} alt="City" />
-          <Carousel.Item src={burgerImg} alt="City" />
+          {carouselArray.map((image) => {
+            const dataUrl = `data:${image.myFile.mimetype};base64,${image.myFile.buffer}`;
+
+            return <Carousel.Item key={image._id} src={dataUrl} alt="City" />;
+          })}
+          {/* <Carousel.Item src={burgerImg} alt="City" />
           <Carousel.Item src={chickenImg} alt="City" />
-          <Carousel.Item src={cheeseSteakImg} alt="City" />
+          <Carousel.Item src={cheeseSteakImg} alt="City" /> */}
         </Carousel>
       </div>
       <div className="button_container">
