@@ -5,14 +5,14 @@ import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
   const [state, handleSubmit] = useForm("manwrdnb");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>Thanks for Contacting Us!</p>;
   }
   return (
     <div className="contact_container">
       {/*Map Section */}
       <section className="my-10">
         <h2 className="text-4xl font-bold text-center find-us-here">
-          Find us here!
+          Find Us Here!
         </h2>
 
         <div className="flex justify-center mt-6">
@@ -33,8 +33,13 @@ const Contact = () => {
           method="POST"
           onSubmit={handleSubmit}
         >
-          <label htmlFor="email">Email Address</label>
-          <input id="email" type="email" name="email" />
+          <label htmlFor="email">Contact Form</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+          />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           <textarea id="message" name="message" />
           <ValidationError

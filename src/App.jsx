@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import Home from "./Components/Home";
 import About from "./Components/About";
-import Header from "./Components/Header";
+
 import Nav from "./Components/Nav";
 import Beverage from "./Components/Beverage";
 import Review from "./Components/Review";
@@ -57,9 +57,7 @@ function App() {
       <Nav removeToken={removeToken} />
 
       {/* Header */}
-      <header>
-        <Header allImages={allImages} />
-      </header>
+      <header></header>
       {/* <AdminPortal imgDownload={imgDownload} allImages={allImages} /> */}
 
       {/* Routes */}
