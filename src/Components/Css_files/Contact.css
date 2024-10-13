@@ -3,24 +3,47 @@
     border: none;
 }
 
-.find-us-here {
+.find-us-here{
   font-family: 'Abril Fatface';
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
-  color: aqua;
+  color: white;
   padding: .5em;
   text-align: center;
+  margin-top: 3em;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px black;
+  
 }
 
 form {
   display: flex;
-  flex-direction: row;
-  gap: 1em;
+  flex-direction: column;
   border: 2px solid black;
-  padding: 1em;
   border-radius: 2em;
-
-  
+  gap: 1em;
+  padding: 1em;
+  height: 18em;
+  width: 20em;
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 8px black;
+}
+form input{
+  padding: .5em;
+  text-align: center;
+}
+form label{
+  color: aqua;
+  font-size: 1.5em;
+  font-family: Abril fatface;
+  letter-spacing: 5px;
+  border-bottom: 2px solid aqua;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+}
+form textarea{
+  padding: .5em;
+  text-align: center;
 }
 form button {
   border: 2px solid black;
@@ -29,6 +52,11 @@ form button {
   margin: 0 2em;
   background-color: aqua;
   color: black;
+  padding: .5em;
+  box-shadow: 2px 2px 8px black;
+  font-weight: bolder;
+  font-family: Abril fatface;
+  letter-spacing: 5px;
 
 }
 

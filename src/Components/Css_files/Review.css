@@ -1,10 +1,21 @@
 .review_container{
     margin-top: 5em;
+    
+}
+.review_container h1{
+   font-size: 3em;
+   font-family: Abril fatface;
+   color: white;
+   border-bottom: 5px solid white;
+   margin-bottom: 1em;
+   letter-spacing: 10px;
+   text-shadow: 2px 2px 8px black;
 }
 
-.ciCnpO > a{
+ .ciCnpO > a{
     display: none;
 
 
 
-}
+} 
+
