@@ -8,12 +8,10 @@ const Contact = () => {
     return <p>Thanks for Contacting Us!</p>;
   }
   return (
-    <div className="contact_container">
+    <div className="contact_container find-us-here">
       {/*Map Section */}
-      <section className="my-10">
-        <h2 className="text-4xl font-bold text-center find-us-here">
-          Find Us Here!
-        </h2>
+      <section className="my-10 ">
+        <h2 className="text-4xl font-bold text-center ">Find Us Here!</h2>
 
         <div className="flex justify-center mt-6">
           <iframe
@@ -41,7 +39,7 @@ const Contact = () => {
             placeholder="Email Address"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <textarea id="message" name="message" />
+          <textarea id="message" name="message" placeholder="Text Area" />
           <ValidationError
             prefix="Message"
             field="message"
