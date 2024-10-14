@@ -20,7 +20,10 @@ const Header = ({ allImages }) => {
   return (
     <div>
       <div className="header_container">
-        <p>The Canyon City Grill</p>
+        <div className="animation_container">
+          <p>The Canyon City Grill</p>
+        </div>
+
         <img src={imgUrl} />
         {/* <h1>Hours of & Operation</h1>
         <h2>Monday-Saturday 11am-8pm</h2>
