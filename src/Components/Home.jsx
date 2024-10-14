@@ -39,6 +39,7 @@ const Home = ({ allImages }) => {
           <Carousel.Item src={chickenImg} alt="City" />
           <Carousel.Item src={cheeseSteakImg} alt="City" /> */}
         </Carousel>
+
         <div className="button_container">
           <Button color="accent">Order Online</Button>
         </div>
