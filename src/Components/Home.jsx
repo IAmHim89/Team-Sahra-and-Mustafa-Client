@@ -70,7 +70,7 @@ const Home = ({ allImages }) => {
                 style={{
                   color: "aqua",
                   position: "absolute",
-                  bottom: "-408%",
+                  bottom: "-407%",
                   left: "45%",
                 }}
               />
@@ -83,7 +83,7 @@ const Home = ({ allImages }) => {
                 style={{
                   color: "#065df4",
                   position: "absolute",
-                  bottom: "-408%",
+                  bottom: "-407%",
                   left: "50%",
                 }}
               />
