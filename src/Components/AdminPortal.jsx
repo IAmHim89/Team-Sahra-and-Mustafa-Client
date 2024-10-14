@@ -33,8 +33,8 @@ const AdminPortal = ({ allImages, imgDownload }) => {
   };
 
   return (
-    <div>
-      <p>hello world</p>
+    <div className="adminPortal_container">
+      <h1>Admin Image Upload</h1>
       {allImages?.map((img) => {
         const dataUrl = `data:${img.myFile.mimetype};base64,${img.myFile.buffer}`;
         console.log(img._id);

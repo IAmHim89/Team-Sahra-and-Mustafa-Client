@@ -1,6 +1,6 @@
 .about_container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     margin: 2em -9.2em;
