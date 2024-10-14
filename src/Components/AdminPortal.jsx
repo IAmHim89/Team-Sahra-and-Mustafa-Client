@@ -68,7 +68,7 @@ const AdminPortal = ({ allImages, imgDownload }) => {
           </div>
         );
       })}
-      <UploadImg imgDownload={imgDownload} allImages={allImages} />
+      {/* <UploadImg imgDownload={imgDownload} allImages={allImages} /> */}
     </div>
   );
 };

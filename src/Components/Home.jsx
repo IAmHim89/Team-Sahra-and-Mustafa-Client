@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Button } from "react-daisyui";
+
 import bbqImg from "../assets/images/BBQ.jpg";
 import burgerImg from "../assets/images/Bfries.jpg";
 import chickenImg from "../assets/images/ChickenWings.jpg";
@@ -7,6 +8,7 @@ import cheeseSteakImg from "../assets/images/Phillycheese.jpg";
 import "../Components/Css_files/Home.css";
 import About from "./About";
 import Beverage from "./Beverage";
+import Header from "./Header";
 //this is a comment
 const Home = ({ allImages }) => {
   const carouselArray = allImages.filter((i) =>
@@ -16,6 +18,7 @@ const Home = ({ allImages }) => {
   console.log(carouselArray);
   return (
     <div>
+      <Header allImages={allImages} />
       {/*  <div className="carouselHeader_container">
       </div> */}
       <div className="carousel_container">

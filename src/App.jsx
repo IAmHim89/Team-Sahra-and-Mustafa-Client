@@ -1,10 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import Home from "./Components/Home";
-import About from "./Components/About";
-import Header from "./Components/Header";
 import Nav from "./Components/Nav";
-import Beverage from "./Components/Beverage";
 import Review from "./Components/Review";
 import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
@@ -57,17 +54,12 @@ function App() {
       <Nav removeToken={removeToken} />
 
       {/* Header */}
-      <header>
-        <Header allImages={allImages} />
-      </header>
-      {/* <AdminPortal imgDownload={imgDownload} allImages={allImages} /> */}
+      <header></header>
 
       {/* Routes */}
       <main>
         <Routes>
           <Route path="/" element={<Home allImages={allImages} />} />
-          {/* <Route path="/about" element={<About allImages={allImages} />} /> */}
-
           <Route path="/reviews" element={<Review />} />
           <Route path="/contact" element={<Contact />} />
           <Route
