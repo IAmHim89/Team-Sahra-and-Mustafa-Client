@@ -43,11 +43,18 @@ const Nav = ({ removeToken }) => {
             <Link to="/contact">Location</Link>
           </li>
           {localStorage.getItem("myToken") && (
-            <li>
-              <button className="logout_btn" onClick={() => removeToken()}>
-                LogOut
-              </button>
-            </li>
+            <>
+              <Link to="/admin">
+                <li>
+                  <button>Admin</button>
+                </li>
+              </Link>
+              <li>
+                <button className="logout_btn" onClick={() => removeToken()}>
+                  LogOut
+                </button>
+              </li>
+            </>
           )}
         </ul>
         <div>
@@ -59,3 +66,7 @@ const Nav = ({ removeToken }) => {
 };
 
 export default Nav;
+
+/* && (
+  
+) */
