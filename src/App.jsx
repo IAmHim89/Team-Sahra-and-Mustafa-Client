@@ -66,11 +66,31 @@ function App() {
           <Route
             path="/admin"
             element={
-              <AdminPortal imgDownload={imgDownload} allImages={allImages} />
+              personalToken ? (
+                <AdminPortal imgDownload={imgDownload} allImages={allImages} />
+              ) : null
             }
           />
 
-          <Route path="/auth" element={<Auth updateToken={updateToken} />} />
+          <Route
+            path="/auth"
+            element={
+              !personalToken ? (
+                <Auth updateToken={updateToken} />
+              ) : (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "45%",
+                    transform: "transition(-20%, -50%)",
+                  }}
+                >
+                  <p className="text-white">Thank you for signing In!</p>
+                </div>
+              )
+            }
+          />
         </Routes>
       </main>
 
