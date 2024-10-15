@@ -1,10 +1,6 @@
 
 
-.spacing_line{
-    border-bottom: 5px solid black;
-    margin-top: 3em;
-   
-}
+
 
 .carousel_container{
     backdrop-filter: blur(10px);
@@ -31,14 +27,7 @@
 
 }
 
-<<<<<<< HEAD
-
-
-
-/* .carouselHeader_container{
-=======
 .footer_container{
->>>>>>> 2fce57f54e20be0aed609bcec11faadf27692991
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,5 +63,6 @@
 .icon_container{
     display: flex;
     flex-direction: row;
+   font-family: Abril fatface;
     margin: 2em;
 }

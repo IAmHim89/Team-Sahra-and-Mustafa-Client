@@ -46,7 +46,14 @@ const Home = ({ allImages }) => {
         </Carousel>
 
         <div className="button_container">
-          <Button color="accent">Order Online</Button>
+          <Button color="accent">
+            <a
+              href="https://www.toasttab.com/canyon-city-grill2-14601-fm-306"
+              target="_blank"
+            >
+              Order Online
+            </a>
+          </Button>
         </div>
       </div>
       <div className="spacing_line"></div>
@@ -60,9 +67,7 @@ const Home = ({ allImages }) => {
             </Link>
           </div>
           <div>
-            <p>
-              ~Feel Free to contact us For any type of Bookings or Reservations~
-            </p>
+            <p>Please contact us if you have any questions or large orders.</p>
 
             <Link to="https://www.instagram.com/explore/locations/252682088449202/canyon-city-grill/">
               <FontAwesomeIcon

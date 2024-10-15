@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Css_files/Nav.css";
 import ccgImg from "../assets/images/CcgLogo.jpg";
-import { Avatar } from "react-daisyui";
+import { Avatar, Button } from "react-daisyui";
 
 const Nav = ({ removeToken }) => {
   return (
@@ -50,8 +50,15 @@ const Nav = ({ removeToken }) => {
             </li>
           )}
         </ul>
-        <div>
-          <button className="nav_button_style">Order Online</button>
+        <div className="button_container">
+          <Button color="accent">
+            <a
+              href="https://www.toasttab.com/canyon-city-grill2-14601-fm-306"
+              target="_blank"
+            >
+              Order Online
+            </a>
+          </Button>
         </div>
       </nav>
     </div>

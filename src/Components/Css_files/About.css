@@ -1,10 +1,10 @@
 .about_container {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 2em -9.2em;
-    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: Abril Fatface;
+    margin: 2em auto;
     opacity: .6.8;
     border-radius: 2em;
 }
@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2em;
     
 }
 
@@ -27,7 +27,6 @@
     font-size: bolder;
     color: white;
     backdrop-filter: blur(10px);
-    text-shadow: 2px 2px 8px black;
 }
 
 .about_container h1 {
