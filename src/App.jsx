@@ -32,6 +32,7 @@ function App() {
     console.log("Your token has been removed!");
     setPersonalToken("");
     localStorage.clear();
+    navigate("/");
   };
 
   const imgDownload = async () => {

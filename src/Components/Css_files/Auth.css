@@ -35,6 +35,8 @@
     font-size: 2em;
     font-family: Abril fatface;
     color: aqua;
+    border-bottom: 2px solid aqua;
+    text-shadow: 2px 2px 8px black;
    
     
 }
