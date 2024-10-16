@@ -41,7 +41,7 @@ const Auth = (props) => {
   };
 
   return (
-    <div>
+    <div className="container_background">
       <div className="form_flex2">
         <h3 style={{ color: "red" }}>{errorMsg}</h3>
         <form

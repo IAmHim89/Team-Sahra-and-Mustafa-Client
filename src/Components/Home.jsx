@@ -63,6 +63,42 @@ const Home = ({ allImages }) => {
       <button className="button_container">
         <p>Please contact us if you have any questions or large orders.</p>
       </button>
+
+      <footer>
+        <div className="footer_container">
+          <div>
+            <Link to="/contact">
+              <button>Contact Us</button>
+            </Link>
+          </div>
+          <div>
+            <Link to="https://www.instagram.com/explore/locations/252682088449202/canyon-city-grill/">
+              <FontAwesomeIcon
+                icon={faSquareInstagram}
+                size="2xl"
+                style={{
+                  color: "aqua",
+                  position: "absolute",
+                  bottom: "",
+                  left: "48%",
+                }}
+              />
+            </Link>
+
+            <Link to="https://www.facebook.com/canyoncitygrill/">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                size="2xl"
+                style={{
+                  color: "#065df4",
+                  position: "absolute",
+                  left: "50%",
+                }}
+              />
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
