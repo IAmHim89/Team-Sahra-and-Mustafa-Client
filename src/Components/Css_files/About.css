@@ -50,9 +50,9 @@
 }
 
 
-/* 
+
 .images img{
-    width: 80vw;
+    width: 50vw;
     height: 20em;
     display: flex;
     flex-direction: row;
@@ -63,7 +63,7 @@
     margin-bottom: 0em;
     box-shadow: 5px 5px 8px black;
     border-radius: 2em;
-} */
+} 
 
 .bottom_border{
     border-bottom: 5px solid black;
