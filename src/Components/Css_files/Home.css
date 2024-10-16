@@ -36,6 +36,18 @@
 }
 
 
+.button_container{
+
+    font-size: large;
+    font-weight: bold;
+    font-family: Abril fatface;
+    border-radius: 10em;
+    margin: 2em;
+    
+    
+}
+
+
 
 .footer_container{
     display: flex;

@@ -60,8 +60,9 @@ const Home = ({ allImages }) => {
       <div className="spacing_line"></div>
       <About allImages={allImages} />
       <Beverage allImages={allImages} />
-
-      <p>Please contact us if you have any questions or large orders.</p>
+      <button className="button_container">
+        <p>Please contact us if you have any questions or large orders.</p>
+      </button>
     </div>
   );
 };

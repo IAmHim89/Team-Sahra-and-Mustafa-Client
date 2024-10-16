@@ -23,6 +23,7 @@
   box-shadow: 0px 1px 0px black;
   overflow: hidden;
   animation: reveal 3s linear forwards;
+  margin: 2em auto;
 }
 
 .animation_container p {
