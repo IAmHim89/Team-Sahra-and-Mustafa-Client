@@ -5,8 +5,13 @@ import Nav from "./Components/Nav";
 import Review from "./Components/Review";
 import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 import AdminPortal from "./Components/AdminPortal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   const [personalToken, setPersonalToken] = useState("");
@@ -95,7 +100,41 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer></footer>
+      <footer>
+        <div className="footer_container">
+          <div>
+            <Link to="/contact">
+              <button>Contact Us</button>
+            </Link>
+          </div>
+          <div>
+            <Link to="https://www.instagram.com/explore/locations/252682088449202/canyon-city-grill/">
+              <FontAwesomeIcon
+                icon={faSquareInstagram}
+                size="2xl"
+                style={{
+                  color: "aqua",
+                  position: "absolute",
+                  bottom: "",
+                  left: "45%",
+                }}
+              />
+            </Link>
+
+            <Link to="https://www.facebook.com/canyoncitygrill/">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                size="2xl"
+                style={{
+                  color: "#065df4",
+                  position: "absolute",
+                  left: "50%",
+                }}
+              />
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

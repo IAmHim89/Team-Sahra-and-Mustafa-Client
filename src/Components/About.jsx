@@ -36,19 +36,9 @@ const About = ({ allImages }) => {
           <p>
             Welcome to our family restaurant in beautiful Canyon City Texas!
             <section>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-              inventore fugiat corrupti praesentium repellat laboriosam est
-              harum enim iure veniam molestiae cumque, quas laborum voluptatem
-              incidunt reprehenderit accusamus. Sequi autem labore nesciunt
-              dignissimos a, esse, ea fugit, numquam officia quos nam dicta illo
-              illum ipsam necessitatibus accusantium? Nemo natus inventore
-              delectus architecto soluta, officiis assumenda at incidunt rem,
-              voluptatibus non molestias temporibus, sequi labore minus.
-              Ratione, repellendus quod autem assumenda quibusdam recusandae at
-              voluptatibus accusamus in quae dolor, ab eligendi quam culpa
-              similique odio vero facere! Inventore quos earum ab quas
-              voluptatum magnam quisquam ipsa dolorum impedit quod, fugit
-              repellat?
+              Open seven days a week, come check out our family friendly
+              restaurant for a home-cooked meal. Our menu offers sandwiches,
+              salads, burgers, and various drinks.
             </section>
           </p>
         </div>

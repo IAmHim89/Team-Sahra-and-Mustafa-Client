@@ -22,22 +22,13 @@ const Beverage = ({ allImages }) => {
     }
   }, [beverageImg]);
   return (
-    <div className="beverage_flex">
-      <h1>Beverages</h1>
+    <div className="beverage_flex beverage_container">
+      <h1>Beverages and Dessert</h1>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores
-        ipsum aliquid corrupti nostrum vitae iure reprehenderit. Similique
-        assumenda voluptatem voluptate iusto exercitationem doloremque quasi
-        quibusdam quam mollitia nostrum nisi nemo expedita animi officiis,
-        asperiores, dicta soluta temporibus illum molestias laudantium ratione
-        tempore! Ipsum quisquam similique beatae exercitationem fugit non
-        excepturi neque animi porro eos perferendis reprehenderit iusto, esse,
-        quam assumenda facilis culpa eveniet repellendus omnis vitae nostrum
-        fugiat nisi. Sit omnis rem accusamus excepturi earum veritatis quibusdam
-        in quasi sint architecto modi aperiam dignissimos dolore voluptatem
-        deserunt fugit, tempore, eius impedit sapiente assumenda necessitatibus!
-        Similique pariatur laborum magni nulla?
+        Have a tall glass of beer with your burger. Canyon City Grill also sells
+        beer and wine. After your meal, you try a strawberry shake to wash it
+        down!
       </p>
 
       <div className="img_flex">

@@ -23,7 +23,8 @@ const Home = ({ allImages }) => {
       <Header allImages={allImages} />
       {/*  <div className="carouselHeader_container">
       </div> */}
-      <div className="carousel_container">
+
+      <div className="carousel_container container_background">
         <h1>Burgers & More</h1>
         <Carousel
           style={{
@@ -44,53 +45,24 @@ const Home = ({ allImages }) => {
           <Carousel.Item src={chickenImg} alt="City" />
           <Carousel.Item src={cheeseSteakImg} alt="City" /> */}
         </Carousel>
+
         <div className="button_container">
-          <Button color="accent">Order Online</Button>
+          <Button color="accent">
+            <a
+              href="https://www.toasttab.com/canyon-city-grill2-14601-fm-306"
+              target="_blank"
+            >
+              Order Online
+            </a>
+          </Button>
         </div>
       </div>
       <div className="spacing_line"></div>
       <About allImages={allImages} />
       <Beverage allImages={allImages} />
-      <footer>
-        <div className="footer_container">
-          <div>
-            <Link to="/contact">
-              <button>Contact Us</button>
-            </Link>
-          </div>
-          <div>
-            <p>
-              ~Feel Free to contact us For any type of Bookings or Reservations~
-            </p>
-
-            <Link to="https://www.instagram.com/explore/locations/252682088449202/canyon-city-grill/">
-              <FontAwesomeIcon
-                icon={faSquareInstagram}
-                size="2xl"
-                style={{
-                  color: "aqua",
-                  position: "absolute",
-                  bottom: "-407%",
-                  left: "45%",
-                }}
-              />
-            </Link>
-
-            <Link to="https://www.facebook.com/canyoncitygrill/">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                size="2xl"
-                style={{
-                  color: "#065df4",
-                  position: "absolute",
-                  bottom: "-407%",
-                  left: "50%",
-                }}
-              />
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <button className="button_container">
+        <p>Please contact us if you have any questions or large orders.</p>
+      </button>
     </div>
   );
 };

@@ -1,13 +1,20 @@
 .about_container {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Canyon_Lake_Gorge_March_2017_IMG1758.jpg/1200px-Canyon_Lake_Gorge_March_2017_IMG1758.jpg?20170326143011");
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
-    align-items: center;
-    margin: 2em -9.2em;
-    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: Abril Fatface;
+    margin: 2em auto;
     opacity: .6.8;
     border-radius: 2em;
 }
+
+
+
 
 .aboutUs{
 
@@ -15,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2em;
     
 }
 
@@ -25,15 +32,13 @@
     padding: 1em;
     margin: 1em 2em;
     font-size: bolder;
-    color: white;
+    color: black;
+    font-weight: bolder;
     backdrop-filter: blur(10px);
-    text-shadow: 2px 2px 8px black;
 }
 
 .about_container h1 {
     font-size: 3em;
-    
-   
     font-family: Abril Fatface;
     color: aqua;
     font-weight: bolder;
@@ -45,7 +50,7 @@
 }
 
 
-
+/* 
 .images img{
     width: 80vw;
     height: 20em;
@@ -58,7 +63,7 @@
     margin-bottom: 0em;
     box-shadow: 5px 5px 8px black;
     border-radius: 2em;
-}
+} */
 
 .bottom_border{
     border-bottom: 5px solid black;
