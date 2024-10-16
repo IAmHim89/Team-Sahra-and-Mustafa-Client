@@ -80,7 +80,7 @@ const Home = ({ allImages }) => {
                   color: "aqua",
                   position: "absolute",
                   bottom: "",
-                  left: "48%",
+                  left: "47%",
                 }}
               />
             </Link>
