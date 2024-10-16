@@ -18,7 +18,7 @@ const Header = ({ allImages }) => {
     }
   }, [headerimg]);
   return (
-    <div>
+    <div className="background-image">
       <div className="header_container">
         <div className="animation_container">
           <p>The Canyon City Grill</p>
