@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Css_files/Admin.css";
 import UploadImg from "./UploadImg";
-import APIURL from "..helpers/";
+import APIURL from "../helpers";
 const AdminPortal = ({ allImages, imgDownload }) => {
   const [image, setImage] = useState("");
 
