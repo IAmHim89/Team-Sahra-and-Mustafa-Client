@@ -17,7 +17,7 @@ const Auth = (props) => {
   const handleSignIn = async () => {
     try {
       setErrorMsg("");
-      const result = await fetch("http://localhost:3001/admin/signin", {
+      const result = await fetch(`${APIURL}/admin/signin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

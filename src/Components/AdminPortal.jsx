@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Css_files/Admin.css";
 import UploadImg from "./UploadImg";
-
+import APIURL from "..helpers/";
 const AdminPortal = ({ allImages, imgDownload }) => {
   const [image, setImage] = useState("");
 
@@ -13,17 +13,14 @@ const AdminPortal = ({ allImages, imgDownload }) => {
     try {
       const formData = new FormData();
       formData.append("image", image);
-      const response = await fetch(
-        `http://localhost:3001/image/update/${imgId}`,
-        {
-          method: "PUT",
+      const response = await fetch(`${APIURL}/image/update/${imgId}`, {
+        method: "PUT",
 
-          headers: {
-            Authorization: "Bearer " + localStorage.getItem("myToken"),
-          },
-          body: formData,
-        }
-      );
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("myToken"),
+        },
+        body: formData,
+      });
       const json = await response.json();
       console.log(json);
       imgDownload();
