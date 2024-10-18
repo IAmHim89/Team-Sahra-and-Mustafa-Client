@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Components/Css_files/Auth.css";
 import UploadImg from "./UploadImg";
+import APIURL from "../helpers";
 
 const Auth = (props) => {
   const [errorMsg, setErrorMsg] = useState("");
