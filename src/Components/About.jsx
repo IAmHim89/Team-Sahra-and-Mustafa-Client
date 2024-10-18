@@ -34,7 +34,7 @@ const About = ({ allImages }) => {
         <h1>About Us</h1>
         <div className="aboutUs">
           <p>
-            Welcome to our family restaurant in beautiful Canyon City Texas!
+            Welcome to the family restaurant in beautiful Canyon City Texas!
             <section>
               Open seven days a week, come check out our family friendly
               restaurant for a home-cooked meal. Our menu offers sandwiches,
