@@ -1,6 +1,16 @@
 {
     "routes": [
       {
+        "src": "/(.*\\.(js|css|json|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot))", 
+        "headers": { "cache-control": "public,max-age=31536000,immutable" }
+      },
+      {
+        "src": "/site.webmanifest",
+        "headers": {
+          "content-type": "application/manifest+json"
+        }
+      },
+      {
         "src": "/(.*)", 
         "dest": "/index.html"
       }
