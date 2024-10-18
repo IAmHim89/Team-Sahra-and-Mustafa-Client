@@ -7,6 +7,7 @@ import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
 import { Routes, Route, useNavigate, Link } from "react-router-dom";
 import AdminPortal from "./Components/AdminPortal";
+import APIURL from "./helpers";
 
 function App() {
   const [personalToken, setPersonalToken] = useState("");

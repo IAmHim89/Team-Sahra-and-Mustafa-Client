@@ -32,10 +32,11 @@ const Auth = (props) => {
 
       const json = await result.json();
       console.log(json);
-      props.updateToken(json.Token);
 
       if (json.Error) {
         throw new Error(json.Error);
+      } else {
+        props.updateToken(json.Token);
       }
     } catch (err) {
       setErrorMsg(err.message);
