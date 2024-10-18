@@ -37,7 +37,7 @@ function App() {
 
   const imgDownload = async () => {
     try {
-      const response = await fetch("http://localhost:3001/image/all", {
+      const response = await fetch(`${APIURL}/image/all`, {
         method: "GET",
         headers: {},
       });

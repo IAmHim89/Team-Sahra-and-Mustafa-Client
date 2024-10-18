@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import APIURL from "../helpers";
 
 const UploadImg = ({ allImages, imgDownload }) => {
   const [image, setImage] = useState("");
@@ -20,7 +21,7 @@ const UploadImg = ({ allImages, imgDownload }) => {
       const formData = new FormData();
       formData.append("image", image);
       formData.append("name", name);
-      const response = await fetch("http://localhost:3001/image/uploadImg", {
+      const response = await fetch(`${APIURL}/image/uploadImg`, {
         method: "POST",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("myToken"),
